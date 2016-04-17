@@ -1,0 +1,37 @@
+{
+  "name": "currency-restapi-currencylayer",
+  "version": "1.0.0",
+  "description": "nodejs wrapper for currencylayer restful api",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benpptung/currency-restapi-currencylayer.git"
+  },
+  "keywords": [
+    "currencylayer",
+    "exchange",
+    "rate",
+    "rates",
+    "currency",
+    "utility",
+    "finance"
+  ],
+  "author": "Ben P.P. Tung",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benpptung/currency-restapi-currencylayer/issues"
+  },
+  "homepage": "https://github.com/benpptung/currency-restapi-currencylayer#readme",
+  "devDependencies": {
+    "colors": "^1.1.2",
+    "expect.js": "^0.3.1",
+    "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "superagent": "^1.8.3",
+    "util-superagent-serializer": "^1.0.1"
+  }
+}

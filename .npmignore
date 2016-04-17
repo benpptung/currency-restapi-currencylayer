@@ -1,0 +1,11 @@
+.idea
+.cache
+log
+bower_components
+npm-debug.log
+test
+examples
+example
+trial
+!test/site/node_modules
+config/access.json

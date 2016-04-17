@@ -1,5 +1,5 @@
 
-This is a Nodejs wrapper of `currencylayer` api for [currency-rates-store](https://www.npmjs.com/package/currency-rates-store). You need to have an account in [currencylayer.com](https://currencylayer.com)
+This is a Nodejs wrapper of `currencylayer` restful api for [currency-rates-store](https://www.npmjs.com/package/currency-rates-store). You need to have an account in [currencylayer.com](https://currencylayer.com)
 
 
 # Example - instantiate the method directly

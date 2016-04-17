@@ -1,8 +1,8 @@
 
-This is a Nodejs wrapper of `currencylayer` api for [currency-rates-store](https://www.npmjs.com/package/currency-rates-store)
+This is a Nodejs wrapper of `currencylayer` api for [currency-rates-store](https://www.npmjs.com/package/currency-rates-store). You need to have an account in [currencylayer.com](https://currencylayer.com)
 
 
-# Example #1
+# Example - instantiate the method directly
 
 ```
 const live = require('currency-restapi-currencylayer').Live('YOUR_ACCESS_KEY');
@@ -16,7 +16,7 @@ live((err, rates) {
 ```
 
 
-# Example #2
+# Example - instantiate the api
 
 ```
 const currlayer = require('currency-restapi-currencylayer')('YOUR_ACCESS_KEY');
@@ -32,8 +32,6 @@ currlayer.historical(d, (err, rates)=>{
 })
 ```
 
-## Feature
-It will detect `http` or `https` automatically, so you do not need to configure it. It defaults to `https`, and come back to `http` if your account doesn't have https feature.
 
 ## Options to instantiate the API
 - `<String>|<Object>`
@@ -41,11 +39,13 @@ It will detect `http` or `https` automatically, so you do not need to configure 
   - currencies: `<Array>|<String>`, e.g. ['USD','GBP','EUR']
   - source: the exchange rates base, default to `USD`
   
-If options is a string, it means `YOUR_ACCESS_KEY`.
+If options is a string, it means `YOUR_ACCESS_KEY`. 
+
+More info, see [Documentation](https://currencylayer.com/documentation)
 
 ## currlayer.live(cb)
 
-This is what [currency-rates-store](https://www.npmjs.com/package/currency-rates-store)  bot need. CurrencyRatesStore will use this api to pull exchange rates.
+This is what [currency-rates-store](https://www.npmjs.com/package/currency-rates-store)  bot need, CurrencyRatesStore will use this api to refresh exchange rates.
 
 callback will receive exchange rates like following
 
